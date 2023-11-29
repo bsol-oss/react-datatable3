@@ -11,7 +11,7 @@ const PageSizeControl = ({ pages }: { pages: number[] }) => {
   const { filterTerm, setFilterTerm } = useContext(FilterContext);
 
   useEffect(() => {
-    setFilterTerm({ ...filterTerm, rows: pageSize });
+    setFilterTerm({ ...filterTerm, offset: 1, rows: pageSize });
   }, [pageSize]);
 
   return (
