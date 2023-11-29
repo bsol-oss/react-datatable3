@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import external from 'rollup-plugin-peer-deps-external'
 import json from '@rollup/plugin-json'
+import typescript from '@rollup/plugin-typescript';
 // Use this if contains any css import
 // import postcss from 'rollup-plugin-postcss'
 
@@ -23,6 +24,7 @@ export default [
             },
         ],
         plugins: [
+            typescript(),
             external(),
             babel({
                 exclude: 'node_modules/**',
