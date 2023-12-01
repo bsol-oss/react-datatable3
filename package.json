@@ -1,6 +1,6 @@
 {
   "name": "react-datatable3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "repository": "https://github.com/bsol-oss/react-datatable3.git",
